@@ -16,14 +16,18 @@ The goals / steps of this project are the following:
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
 
+Video link:
+https://drive.google.com/file/d/0B1qa2SOuBDHOYVhYN1RTZ1dBTHc/view
+Model link:
+https://drive.google.com/open?id=0B1qa2SOuBDHOZk1jWC1ZTmtlU2M
 
 [//]: # (Image References)
 
 [image1]: ./images/model_visualization.png "Model Visualization"
 [image2]: ./images/lane_driving.png "Lane Driving Example"
-[image3]: ./images/on_lane_driving.jpeg "Recovery Image"
-[image4]: ./images/on_lane_driving_centering.jpeg "Recovery Image"
-[image5]: ./images/on_lane_driving_centering2.jpeg "Recovery Image"
+[image3]: ./images/on_lane_driving.jpg "Recovery Image"
+[image4]: ./images/on_lane_driving_centering.jpg "Recovery Image"
+[image5]: ./images/on_lane_driving_centering2.jpg "Recovery Image"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  

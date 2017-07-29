@@ -16,18 +16,11 @@ The goals / steps of this project are the following:
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
 
-Video link:
-https://drive.google.com/file/d/0B1qa2SOuBDHOYVhYN1RTZ1dBTHc/view
-Model link:
-https://drive.google.com/open?id=0B1qa2SOuBDHOZk1jWC1ZTmtlU2M
+[Video Link](https://drive.google.com/file/d/0B1qa2SOuBDHOYVhYN1RTZ1dBTHc/view)
 
-[//]: # (Image References)
+[Model Link](https://drive.google.com/open?id=0B1qa2SOuBDHOZk1jWC1ZTmtlU2M)
 
-[image1]: ./images/model_visualization.png "Model Visualization"
-[image2]: ./images/lane_driving.png "Lane Driving Example"
-[image3]: ./images/on_lane_driving.jpg "Recovery Image"
-[image4]: ./images/on_lane_driving_centering.jpg "Recovery Image"
-[image5]: ./images/on_lane_driving_centering2.jpg "Recovery Image"
+
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -108,19 +101,21 @@ a good classifier. But car kept running out of the road at the first corner. The
 
 ####2. Final Model Architecture
 
-![alt text][image1]
+![Final Model Architecture](https://user-images.githubusercontent.com/22501067/28742937-7e558ea0-7445-11e7-8380-d90d41eed172.PNG "Final Model Architecture")
 
 ####3. Creation of the Training Set & Training Process
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
-![alt text][image2]
+![Lane Driving](https://user-images.githubusercontent.com/22501067/28742936-7e37118c-7445-11e7-9da7-62f249f68034.jpg)
+
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
 
-![alt text][image3]
-![alt text][image4]
-![alt text][image5]
+![On Lane Driving](https://user-images.githubusercontent.com/22501067/28742938-7e6c2a20-7445-11e7-9887-1ad4cbb60382.JPG)
+![On Lane Driving Right](https://user-images.githubusercontent.com/22501067/28742939-7e6c8100-7445-11e7-9b61-7c150adb8192.JPG)
+![On Lane Driving Left](https://user-images.githubusercontent.com/22501067/28742940-7e6e4f3a-7445-11e7-9641-19c41c4a1b64.JPG)
+
 
 Then I repeated this process on track two in order to get more data points.
 

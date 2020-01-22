@@ -1,4 +1,4 @@
-#**Behavioral Cloning** 
+# **Behavioral Cloning** 
 ---
 System:
 
@@ -20,24 +20,24 @@ The goals / steps of this project are the following:
 
 [Model Link](https://drive.google.com/open?id=0B1qa2SOuBDHOZk1jWC1ZTmtlU2M)
 
-###Virtual environment Note!
+### Virtual environment Note!
 
-####Install Python3.5 (Ubuntu 18.04)
+#### Install Python3.5 (Ubuntu 18.04)
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get install python3.5-dev
 
-####Create venv: 
+#### Create venv: 
 mkvirtualenv p35 -p python3.5
 pip install -r requirements_behavioral_clonning.txt
 
 
 ## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
+### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
 
 ---
-###Files Submitted & Code Quality
+### Files Submitted & Code Quality
 
-####1. Submission includes all required files and can be used to run the simulator in autonomous mode
+#### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
 My project includes the following files:
 * sdcnd_project3.ipynb (Converted model.py into jupyter notebook) containing the script to create and train the model
@@ -45,13 +45,13 @@ My project includes the following files:
 * model.h5 containing a trained convolution neural network 
 * writeup_carnd_term1_project3_berk_tepebag.md summarizing the results of the behavioral cloning project.
 
-####2. Submission includes functional code
+#### 2. Submission includes functional code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
 ```sh
 python drive.py model.h5
 ```
 
-####3. Submission code is usable and readable
+#### 3. Submission code is usable and readable
 
 The sdcnd_project3.ipynb file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
@@ -63,9 +63,9 @@ The sdcnd_project3.ipynb containts the code for training the network by the data
 	3. generator2(lines,batch_size=32):
 	Generator used to prevent memory errors. Even with a set of 10k data, without generator system was reaching memory limits. 
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. An appropriate model architecture has been employed
+#### 1. An appropriate model architecture has been employed
 
 My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
 
@@ -79,15 +79,15 @@ I followed NVIDIA pipeline with small changes.
 	
 
 
-####2. Attempts to reduce overfitting in the model
+#### 2. Attempts to reduce overfitting in the model
 
 As mentioned above, 2 dropout layers were added to prevent overfitting. With 19k data network managed to run first track without problems. 
 
-####3. Model parameter tuning
+#### 3. Model parameter tuning
 
 The model used an adam optimizer, so the learning rate was not tuned manually.
 
-####4. Appropriate training data
+#### 4. Appropriate training data
 
 Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road ..
 
@@ -99,20 +99,20 @@ Training data method:
 
 For details about how I created the training data, see the next section. 
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. Solution Design Approach
+#### 1. Solution Design Approach
 
 The overall strategy for deriving a model architecture was to ...
 
 My first step was to use a convolution neural network model similar to the LeNET. I thought this model might be appropriate because, it is
 a good classifier. But car kept running out of the road at the first corner. Then I followed NVIDIA's architecture. It trained but it was taking too long since I added maxpooling and dropout for every convolution layer. Since it was taking an hour to train the network, I started with 1 epoch. As MSE was around 5% and car is driving properly I did not increse the EPOCH.
 
-####2. Final Model Architecture
+#### 2. Final Model Architecture
 
 ![Final Model Architecture](https://user-images.githubusercontent.com/22501067/28742937-7e558ea0-7445-11e7-8380-d90d41eed172.PNG "Final Model Architecture")
 
-####3. Creation of the Training Set & Training Process
+#### 3. Creation of the Training Set & Training Process
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 

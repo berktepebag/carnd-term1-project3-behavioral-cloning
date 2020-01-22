@@ -23,12 +23,12 @@ The goals / steps of this project are the following:
 ### Virtual environment Note!
 
 #### Install Python3.5 (Ubuntu 18.04)
-1- sudo add-apt-repository ppa:deadsnakes/ppa
-2- sudo apt-get install python3.5-dev
+1. sudo add-apt-repository ppa:deadsnakes/ppa
+2. sudo apt-get install python3.5-dev
 
 #### Create venv: 
-1- mkvirtualenv p35 -p python3.5
-2- pip install -r requirements_behavioral_clonning.txt
+3. mkvirtualenv p35 -p python3.5
+4. pip install -r requirements_behavioral_clonning.txt
 
 
 ## Rubric Points

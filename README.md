@@ -20,6 +20,15 @@ The goals / steps of this project are the following:
 
 [Model Link](https://drive.google.com/open?id=0B1qa2SOuBDHOZk1jWC1ZTmtlU2M)
 
+###Virtual environment Note!
+
+####Install Python3.5 (Ubuntu 18.04)
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get install python3.5-dev
+
+####Create venv: 
+mkvirtualenv p35 -p python3.5
+pip install -r requirements_behavioral_clonning.txt
 
 
 ## Rubric Points

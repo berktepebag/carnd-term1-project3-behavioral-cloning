@@ -52,7 +52,7 @@ protobuf==3.11.2
 python-engineio==3.11.2
 python-qt-binding==0.3.6
 python-socketio==4.4.0
-PyYAML==5.3
+PyYAML==5.4
 qt-dotgraph==0.3.16
 qt-gui==0.3.16
 qt-gui-cpp==0.3.16

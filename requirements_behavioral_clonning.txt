@@ -48,7 +48,7 @@ monotonic==1.5
 netifaces==0.10.6
 numpy==1.18.1
 Pillow==2.2.2
-protobuf==3.11.2
+protobuf==3.18.3
 python-engineio==3.11.2
 python-qt-binding==0.3.6
 python-socketio==4.4.0
